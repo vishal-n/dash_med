@@ -34,7 +34,8 @@ ALLOWED_HOSTS = []
 LANGUAGES = (
     ('en', _('English')),
     ('es', _('Spanish')),
-    ('de', _('German'))
+    ('de', _('German')),
+    ('am', _('American'))
 )
 
 # Application definition

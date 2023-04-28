@@ -17,8 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from i_18n_app.views import sync_languages_to_db
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('records/', include("i_18n_app.urls"))
 ]
+
+def sync_languages():
+    print("Sync languages in urls.py triggered")
+    sync_languages_to_db()
+sync_languages()
+
+print("Called >>>>>>")
